@@ -1,0 +1,27 @@
+create table institute (
+inno varchar2(3) NOT NULL Primary key,
+inname varchar2(10),
+tel varchar2(14),
+bdate date,
+course varchar2(3),
+status char(1)
+);
+
+insert into institute values('1' , '전한국' , '010-1111-2222' , '20121201' , '1' , '1');
+insert into institute values('2' , '주선미' , '010-1111-3333' , '20121204' , '2' , '1');
+insert into institute values('3' , '비소미' , '010-1111-4444' , '20021001' , '2' , '1');
+insert into institute values('4' , '우소망' , '010-1111-5555' , '20021109' , '1' , '1');
+insert into institute values('5' , '리동국' , '010-1111-6666' , '20001224' , '2' , '2');
+insert into institute values('6' , '내소라' , '010-1111-7777' , '20001208' , '2' , '2');
+
+create table course (
+course varchar2(3) NOT NULL Primary Key,
+teacher varchar2(10),
+cname varchar2(20),
+status char(1)
+);
+
+insert into course values('1' , '박교수' , '시스템분석' , '1');
+insert into course values('2' , '김교수' , '전산개론' , '1');
+insert into course values('3' , '이교수' , '마캐팅개론' , '1');
+insert into course values('4' , '황교수' , '사회학' , '2');
